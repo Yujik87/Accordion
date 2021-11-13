@@ -33,13 +33,13 @@ function App() {
     );
 }
 
-type PageTitlePropsType = {
+/*type PageTitlePropsType = {
     title: string
 }
 
 function PageTitle(props: PageTitlePropsType) {
     console.log('AppTitle rendering')
     return <h1>{props.title}</h1>
-}
+}*/
 
 export default App;
