@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, {ChangeEvent, useRef, useState} from "react";
 
 export default {
     title: 'Input'
@@ -10,10 +10,11 @@ export const ControlledInput = () => <input value={'it-incubator.by'}/>
 
 export const TrackedValueOfUncontrolledInput = () => {
     const[value, setValue] = useState('')
-    return <><input onChange={(event)=>{
+    const onCangeFunction = (event: ChangeEvent<HTMLInputElement>)=>{
         const actualValue = event.currentTarget.value;
         setValue(actualValue);
-    }}/> - {value} </>;
+    }
+    return <><input onChange={onCangeFunction}/> - {value} </>;
 }
 
 export const GetValueOfUncontrolledInputByButtonPress = () => {
