@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-
 import {Rating, RatingValueType} from './Rating';
 
 

@@ -1,8 +1,15 @@
 import React from 'react';
 
-type AccordionPropsType = {
+export type AccordionPropsType = {
     titleValue: string
+    /**
+     * Show list when 'false'
+     * @param logical parameter
+     */
     collapsed: boolean
+    /**
+     * Elements
+     */
     onChange: () => void
 }
 
