@@ -1,5 +1,10 @@
 import React from 'react';
 
+export type ItemType = {
+    title: string
+    value: any
+}
+
 export type AccordionPropsType = {
     titleValue: string
     /**
@@ -45,7 +50,7 @@ function AccordionBody(props: AccordionBodyItemsType) {
     console.log('AccordionBody rendering')
     return (
         <ul>
-            {props.items.map(item => <li>{item}</li>)}
-s        </ul>
+            {props.items.map((i, index) => <li key={index}>{i}</li>)}
+        </ul>
     );
 }

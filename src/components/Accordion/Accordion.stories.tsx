@@ -16,7 +16,7 @@ export const UncollapsedMode = () => <Accordion titleValue={'Users'} collapsed={
 
 export const ModeChanging = () => {
     const [value, setValue] = useState<boolean>(true)
-    return <Accordion titleValue={'Users'} collapsed={value} onChange={() => setValue(!value)} items={[]} />
+    return <Accordion titleValue={'Users'} collapsed={value} onChange={() => setValue(!value)} items={['Dimych', 'Valera' ,'Viktor']} />
 }
 
 const Template: Story<AccordionPropsType> = (args) => <Accordion {...args} />;
