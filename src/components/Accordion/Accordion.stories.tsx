@@ -23,7 +23,11 @@ export const UncollapsedMode = () => <Accordion
     titleValue={'Users'}
     collapsed={false}
     onChange={callback}
-    items={[{title: 'Dimych', value: 1}, {title: 'Valera', value: 2} ,{title: 'Viktor', value: 3}]}
+    items={[
+        {title: 'Dimych', value: 1},
+        {title: 'Valera', value: 2},
+        {title: 'Viktor', value: 3}
+    ]}
     onClick={onClickCallback} />
 
 export const ModeChanging = () => {
@@ -32,7 +36,11 @@ export const ModeChanging = () => {
         titleValue={'Users'}
         collapsed={value}
         onChange={() => setValue(!value)}
-        items={[{title: 'Dimych', value: 1}, {title: 'Valera', value: 2} ,{title: 'Viktor', value: 3}]}
+        items={[
+            {title: 'Dimych', value: 1},
+            {title: 'Valera', value: 2},
+            {title: 'Viktor', value: 3}
+        ]}
         onClick={onClickCallback} />
 }
 

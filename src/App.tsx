@@ -15,10 +15,10 @@ function App() {
             <OnOff
                 on={switchOnOff}
                 onChange={setSwitchOnOff}/>
-            <Accordion
+            {/*<Accordion
                 titleValue={'Menu'}
                 collapsed={accordionCollapsed}
-                onChange={() => {setAccordionCollapsed(!accordionCollapsed)}}/>
+                onChange={() => {setAccordionCollapsed(!accordionCollapsed)}}/>*/}
             <Rating
                 value={ratingValue}
                 onClick={setRatingValue}/>
